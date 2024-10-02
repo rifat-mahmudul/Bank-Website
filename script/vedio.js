@@ -60,7 +60,7 @@ const showVideo = (videos) => {
                 src=${video.thumbnail}
                 alt="Shoes" />
 
-                <p class=' absolute text-white bg-black p-1 right-2 bottom-2 rounded-md '>${video.others.posted_date}</p>
+                ${video.others.posted_date && `<p class=' absolute text-white bg-black p-1 right-2 bottom-2 rounded-md '>${video.others.posted_date}</p>`}
             </figure>
 
             <div class="py-4 flex gap-3">
